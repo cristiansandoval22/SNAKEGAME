@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech Mono", monospace;
+}
+
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    position: relative;
+}
+#start, .boardInfo{
+    font-size: 25px;
+}
+
+#gameOver{
+    color: black;
+    background-color: #979797 ;
+    display: flex;
+    position: absolute;
+  top: 0;
+  left: 0;
+  right: 819px;
+   text-align: center;
+   vertical-align: center;
+    padding: 10px 20px;
+    display: none;
+}
+
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.start{
+    background-color: #f35a69;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: scale 0.4s ease-in-out;
+}
+
+.start:hover{
+    
+    transform: scale(1.1);
+
+}
+#scoreBoard{
+    display: inline-flex;
+}
+
+.square{
+    aspect-ratio: 1; 
+}
+
+.emptySquare{
+    background-color: #456990;
+}
+
+.snakeSquare{
+    background-color: #ccf47f;
+}
+
+.foodSquare{
+    background-color: #f35a69;
+}
+button{
+    cursor: pointer;
+}
